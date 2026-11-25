@@ -1,0 +1,3 @@
+import http from 'node:http';
+import worker from '../worker/index.js';
+const server=http.createServer(async(req,res)=>{try{const body=['GET','HEAD'].includes(req.method)?undefined:await new Promise(resolve=>{let data='';req.on('data',c=>data+=c);req.on('end',()=>resolve(data));});const r=await worker.fetch(new Request('http://'+req.headers.host+req.url,{method:req.method,headers:req.headers,body}),process.env,{});res.writeHead(r.status,Object.fromEntries(r.headers));res.end(Buffer.from(await r.arrayBuffer()));}catch{res.writeHead(500);res.end('Server error');}});const portArg=process.argv.indexOf('--port');server.listen(Number(process.env.PORT||(portArg>=0?process.argv[portArg+1]:3000)),'0.0.0.0');

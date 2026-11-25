@@ -1,0 +1,235 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f5ee"><meta name="description" content="向善造物：在可探索的 3D 海岛中学习海洋环保。收集海漂、完成分类、解锁海洋守护证书。"><title>蓝海课堂 · 向善造物</title><style>
+:root{--ink:#183e43;--muted:#6c8583;--green:#1b7468;--lime:#dcf18c;--bg:#f3f5ee;--line:#e0e7de;--card:#fff;--shadow:0 18px 45px #153f4010}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}button,input,textarea,select{font:inherit}button,a,input,textarea{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #cae86c;outline-offset:4px}a{color:var(--green)}button{color:inherit;border:0;background:none}.sr{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0)}.hidden{display:none!important}.shell{max-width:1530px;margin:auto;padding:0 44px}header{display:flex;align-items:center;justify-content:space-between;height:100px;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:800;font-size:23px;letter-spacing:1px}.mark{display:grid;place-items:center;width:43px;height:43px;border-radius:14px;background:var(--green);color:var(--lime);font-size:28px;line-height:1}.brand small{font-size:10px;display:block;letter-spacing:2.5px;line-height:1.2;font-weight:500}.nav{display:flex;align-items:center;gap:8px}.nav button{padding:9px 18px;border-radius:25px;font-size:14px}.nav button.active{background:#e1eadc;font-weight:700}.top-right{display:flex;align-items:center;gap:13px;font-size:12px}.team{padding:7px 13px;background:#fff;border:1px solid var(--line);border-radius:22px}.dot{width:6px;height:6px;background:#5fa778;border-radius:100%;display:inline-block;margin-right:6px}.intro{display:flex;justify-content:space-between;gap:24px;align-items:end;padding:31px 0 24px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--green);font-weight:700;display:flex;align-items:center;gap:8px}.eyebrow:before{content:"";width:23px;height:1px;background:var(--green)}h1{font-size:34px;line-height:1.4;letter-spacing:-1px;margin:8px 0 6px}h1 span{font-weight:400;color:var(--green)}.subtitle{font-size:13px;color:var(--muted);margin:0}.intro-meta{display:flex;gap:25px;align-items:center;font-size:12px;color:var(--muted)}.intro-meta b{color:var(--ink);display:block;font-size:17px}.pill{border:1px solid #b8d0bb;border-radius:30px;padding:6px 11px;font-size:11px;background:#edf4e5}.layout{display:grid;grid-template-columns:minmax(0,1fr) 326px;gap:21px}.world{height:535px;position:relative;border-radius:24px;overflow:hidden;background:#b7e1df;box-shadow:var(--shadow);isolation:isolate}.world canvas,.world svg{display:block;width:100%;height:100%;touch-action:none;cursor:grab}.world canvas:active,.world svg:active{cursor:grabbing}.world-label{position:absolute;top:20px;left:22px;background:#fffdf4df;border:1px solid #ffffff8a;padding:10px 15px;border-radius:14px;z-index:1;pointer-events:none}.world-label strong{font-size:13px;display:block}.world-label small{font-size:10px;letter-spacing:2px;color:var(--muted)}.scene-badge{position:absolute;right:18px;top:20px;padding:6px 10px;border-radius:18px;background:#174f4bbd;color:#fff;font-size:10px;letter-spacing:1px;pointer-events:none}.world-hint{position:absolute;top:80px;left:22px;font-size:11px;color:#3a6f70;pointer-events:none}.floating-tag{position:absolute;z-index:2;border-radius:30px;background:#fffdf4eb;box-shadow:0 4px 20px #31555c18;padding:6px 11px;font-size:11px;pointer-events:none;transform:translate(-50%,-50%);white-space:nowrap}.floating-tag.turtle{background:var(--green);color:white}.companion{display:flex;align-items:center;gap:11px;position:absolute;bottom:20px;left:20px;max-width:calc(100% - 170px);border-radius:16px;background:#fffef5ed;padding:12px 16px;box-shadow:0 5px 25px #31555c12}.avatar{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;border-radius:12px;background:#e0ecc8;font-size:24px}.companion strong{font-size:12px}.companion p{font-size:11px;margin:1px 0 0;color:var(--muted)}.view-controls{position:absolute;right:18px;bottom:20px;display:flex;gap:5px;padding:5px;border-radius:30px;background:#ffffffdc}.view-controls button{height:33px;width:33px;border-radius:50%;font-size:17px}.view-controls button:hover{background:var(--lime)}.rail{display:flex;flex-direction:column;gap:14px}.mission{background:var(--card);border-radius:23px;padding:23px;box-shadow:var(--shadow);flex:1}.panel-head{display:flex;justify-content:space-between;align-items:center}.panel-head h2{font-size:16px;margin:0}.tiny{font-size:11px;color:var(--muted)}.progress-line{height:5px;background:#edf0e8;border-radius:8px;margin:18px 0 21px;overflow:hidden}.progress-line div{height:100%;background:var(--green);width:0;transition:width .6s}.step{display:flex;gap:12px;padding:0 0 23px;position:relative}.step:not(:last-of-type):after{position:absolute;content:"";left:13px;top:29px;height:calc(100% - 34px);width:1px;background:var(--line)}.step-no{border-radius:50%;height:28px;width:28px;display:grid;place-items:center;flex-shrink:0;border:1px solid var(--line);font-size:11px}.step.current .step-no{background:var(--green);color:#fff;border-color:var(--green)}.step.done .step-no{background:var(--lime);border-color:var(--lime)}.step strong{font-size:13px;display:block;line-height:1.5}.step p{font-size:11px;color:var(--muted);margin:3px 0 0}.primary{background:var(--green);color:white;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:650;transition:transform .15s,background .2s}.primary:hover{background:#115d55;transform:translateY(-1px)}.primary.lime{background:var(--lime);color:var(--ink)}.primary.full{width:100%}.secondary{background:#eef3e8;color:var(--green);padding:10px 18px;border-radius:12px;font-size:13px}.quiet{font-size:11px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}.tip{padding:17px 20px;border-radius:19px;background:#e7eddb;font-size:11px;color:#66806b;display:flex;gap:12px}.tip b{display:block;color:var(--ink);font-size:12px;margin-bottom:3px}.tip .sun{font-size:24px;color:#7d9d4d}.under{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;margin:19px 0 26px}.stat{border:1px solid var(--line);padding:16px 19px;border-radius:15px;display:flex;gap:12px;align-items:center}.stat .symbol{background:#e7eddb;border-radius:12px;width:37px;height:37px;display:grid;place-items:center;font-size:19px}.stat label{font-size:10px;color:var(--muted);display:block;letter-spacing:1px}.stat strong{font-size:16px;font-weight:650}.stat small{font-size:11px;color:var(--muted);font-weight:400}.collection{background:white;border:1px solid var(--line);border-radius:20px;padding:21px 24px;margin-bottom:24px}.collection h2{font-size:15px;margin:0}.objects{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:15px}.object-button{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left;display:flex;gap:10px;align-items:center;transition:background .2s}.object-button:hover{background:#edf5e9}.object-button.found{border-color:#a7cba8;background:#f0f6e8}.object-button span:first-child{font-size:25px}.object-button strong{font-size:12px;display:block}.object-button small{font-size:10px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:20px 0 28px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;letter-spacing:.3px}footer b{color:#54736a;font-weight:500}.techs{display:flex;gap:16px}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#173e3cf5;color:white;border-radius:14px;padding:12px 23px;z-index:100;max-width:90vw;text-align:center;box-shadow:var(--shadow);font-size:13px}.modal{border:0;border-radius:25px;padding:0;width:min(530px,92vw);max-height:88vh;color:var(--ink);box-shadow:0 25px 90px #113b3e40;background:var(--bg)}.modal::backdrop{background:#103e4266;backdrop-filter:blur(5px)}.modal.wide{width:min(850px,94vw)}.modal-head{padding:23px 27px 15px;display:flex;justify-content:space-between;align-items:center;gap:15px}.modal h2{font-size:21px;margin:0}.close{width:30px;height:30px;background:white;border-radius:50%;font-size:20px}.modal-body{padding:0 27px 27px}.modal p{font-size:13px;color:var(--muted)}.object-hero{text-align:center;font-size:76px;background:#e6eee0;border-radius:20px;margin:7px 0 19px;padding:18px}.fact{border-left:3px solid #a5c271;padding:8px 13px;background:#edf1e4;font-size:12px;margin:15px 0 20px}.bins{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bin{border:1px solid var(--line);border-radius:14px;padding:14px;background:white;font-size:13px}.bin:hover{border-color:var(--green);background:#e8f1df}.bin i{display:block;font-style:normal;font-size:25px}.answer{display:block;text-align:left;background:white;border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:10px 0;width:100%;font-size:13px}.answer.correct{background:#dfedc6;border-color:#8caf6c}.answer.wrong{background:#fae5df;border-color:#ce8a76}.feedback{font-size:13px;padding:12px 15px;border-radius:12px;background:#e4edd5;margin:15px 0;line-height:1.8}.creator-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:25px}.field-label{display:block;font-size:12px;font-weight:650;margin:14px 0 7px}textarea,input[type=text]{border:1px solid #cfdbcf;border-radius:12px;padding:12px;background:white;color:var(--ink);width:100%;outline:none}textarea{resize:vertical;min-height:130px;font-size:13px;line-height:1.8}.template{font-size:11px;padding:6px 10px;background:#e4ebdc;border-radius:20px;margin:5px 4px 4px 0}.flow-row{padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.flow-row strong{display:block}.flow-row small{color:var(--muted);font-size:11px}.state{float:right;border-radius:20px;padding:2px 7px;background:#e8eddf;font-size:10px;color:#697c64}.state.on{background:#d3ecb5;color:#2b602f}.status-box{border-radius:15px;background:#e7eddd;padding:15px 18px;margin-top:18px;font-size:12px}.status-box p{font-size:11px;margin:7px 0 0}.subhead{font-size:14px;margin:17px 0 8px}.asset-list{font-size:12px;padding:12px;background:white;border-radius:12px;line-height:1.9}.asset-list li{margin:5px 0}.file-label{display:block;cursor:pointer;padding:11px 15px;border:1px dashed #acc19e;border-radius:12px;font-size:12px;text-align:center;margin-top:12px;background:white}.file-label input{display:none}.certificate{text-align:center;border:1px solid #bdcda8;padding:28px 16px;background:#fffef5;border-radius:18px}.certificate .seal{font-size:58px}.certificate h3{font-size:28px;margin:7px 0}.certificate p{font-size:12px}.certificate .big{font-size:20px;letter-spacing:5px;color:var(--green);font-weight:bold}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.note{font-size:11px!important}.info-card{background:white;border-radius:16px;padding:16px 20px;margin:12px 0}.info-card h3{font-size:14px;margin:0 0 7px}.info-card p{margin:0;font-size:12px}.kbd{font-size:11px;border:1px solid #bbcfc8;border-radius:4px;padding:1px 5px}.empty3d{position:absolute;top:40%;left:10%;right:10%;text-align:center;background:#fffdf4;padding:25px;border-radius:20px}body.high-contrast{--ink:#082c29;--muted:#355c4c;--green:#08584b;--line:#a7bca2}body.reduce-motion *{animation:none!important;scroll-behavior:auto!important}
+@media(min-width:1550px){.world{height:590px}}@media(max-width:1150px){.shell{padding:0 25px}.top-right .team{display:none}.layout{grid-template-columns:minmax(0,1fr) 285px}.world{height:520px}.mission{padding:20px}.objects{grid-template-columns:repeat(2,1fr)}.intro-meta{gap:15px}.intro-meta .pill{display:none}.companion{max-width:calc(100% - 110px)}.view-controls{flex-direction:column}.techs{gap:9px}}@media(max-width:780px){.shell{padding:0 17px}header{height:76px}.brand{font-size:19px;gap:8px}.mark{width:34px;height:34px;font-size:24px;border-radius:11px}.brand small{font-size:8px}.nav{gap:0}.nav button{padding:8px 10px;font-size:12px}.top-right{display:none}.intro{padding:23px 0 19px}.intro-meta{display:none}h1{font-size:27px}.subtitle{font-size:12px}.layout{grid-template-columns:1fr}.world{height:430px}.rail{display:block}.mission{padding:21px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.step{padding:18px 0;gap:8px}.step:not(:last-of-type):after{display:none}.step strong{font-size:12px}.step p{font-size:10px}.step-no{height:24px;width:24px}.tip{display:none}.under{gap:8px;margin:14px 0}.stat{padding:12px 10px;gap:7px}.stat .symbol{display:none}.stat strong{font-size:14px}.stat label{font-size:9px}.stat small{font-size:9px}.collection{padding:18px}.objects{gap:8px}.object-button{padding:10px}.creator-grid{grid-template-columns:1fr;gap:10px}footer{flex-direction:column;gap:6px;font-size:9px}.techs{flex-wrap:wrap}.companion{bottom:15px;left:12px;max-width:calc(100% - 70px);padding:10px}.companion p{font-size:10px}.world-label{top:15px;left:15px;padding:8px 12px}.scene-badge{top:18px;right:12px;font-size:8px}.world-hint{left:15px;top:71px;font-size:10px}.view-controls{right:12px;bottom:16px}.view-controls button{height:27px;width:27px;font-size:15px}.modal-body{padding:0 20px 22px}.modal-head{padding:20px}.modal h2{font-size:18px}}
+@media print{body>*:not(dialog){display:none!important}dialog{position:static;border:0;max-height:none;width:100%;box-shadow:none}dialog::backdrop,.modal-head,.modal-body>.actions,.modal-body>p,.close{display:none!important}.certificate{border:2px solid #547b55;margin:35mm 10mm;padding:25mm 10mm}.certificate h3{font-size:36px}}
+
+.language-switch{display:inline-flex;align-items:center;justify-content:center;border:1px solid #b8d0bb;border-radius:20px;padding:5px 11px;font-size:12px;text-decoration:none;color:var(--green);white-space:nowrap}
+html[lang=en] .brand{font-size:19px;letter-spacing:0}html[lang=en] .nav button{padding:8px 11px}html[lang=en] .intro-meta{min-width:210px}html[lang=en] .companion p{max-width:500px}html[lang=en] .certificate .big{letter-spacing:1px}html[lang=en] .state{float:none;display:inline-block;margin-bottom:5px}html[lang=en] .world-hint{max-width:75%;line-height:1.5}
+@media(max-width:780px){header{height:auto;min-height:76px;padding:12px 0;flex-wrap:wrap;gap:8px}.nav{width:100%;justify-content:space-between}.nav button{padding:7px 8px!important}html[lang=en] h1{font-size:25px}.step{flex-direction:column}.companion{max-width:calc(100% - 75px)}.companion p{line-height:1.4}.world-hint{max-width:70%}html[lang=en] .stat strong{font-size:12px}}
+/* Keep the task controls usable beside the scene and on narrow screens. */
+:root {
+  --muted: #4b6865;
+  --line: #d4e1d9;
+}
+body { font-size: 1rem; background: #f2f7f1; }
+header { min-height: 76px; height: auto; padding: 14px 0; }
+.brand { letter-spacing: 0; }
+.nav { flex-wrap: wrap; }
+.nav button, html[lang=en] .nav button, .language-switch {
+  min-height: 44px;
+  font-size: .875rem;
+}
+.nav button:hover, .language-switch:hover { background: #e1eadc; }
+.skip-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  transform: translateY(-180%);
+  background: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.skip-link:focus { transform: none; }
+:where(button, a, input, textarea, select, summary):focus-visible,
+#objectsHeading:focus-visible, [tabindex="-1"]:focus-visible {
+  outline: 3px solid #137367;
+  outline-offset: 3px;
+}
+.primary:focus-visible { outline: 3px solid #137367; outline-offset: 3px; }
+.intro { padding: 32px 0 24px; }
+h1, html[lang=en] h1 { font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.24; }
+.subtitle { font-size: 1rem; max-width: 52ch; }
+.intro-meta, html[lang=en] .intro-meta {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  gap: 8px;
+  font-size: .875rem;
+}
+.intro-meta span {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: #e9f3eb;
+}
+.layout {
+  grid-template-columns: minmax(0, 1fr) minmax(285px, 330px);
+  grid-template-areas: "world mission";
+  align-items: stretch;
+}
+.mission {
+  grid-area: mission;
+  min-width: 0;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+.world { grid-area: world; min-width: 0; }
+#scene { width: 100%; height: 100%; }
+.panel-head { gap: 12px; }
+.panel-head h2 { font-size: 1.125rem; }
+.tiny, .quiet, .step p { font-size: .875rem; }
+#lessonProgress {
+  width: 100%;
+  height: 8px;
+  margin: 16px 0 22px;
+  border: 0;
+  border-radius: 8px;
+  appearance: none;
+  background: #e5eee7;
+  color: var(--green);
+}
+#lessonProgress::-webkit-progress-bar { background: #e5eee7; border-radius: 8px; }
+#lessonProgress::-webkit-progress-value { background: var(--green); border-radius: 8px; }
+#lessonProgress::-moz-progress-bar { background: var(--green); border-radius: 8px; }
+.steps { flex: 1; list-style: none; margin: 0; padding: 0; }
+.step strong { font-size: .9375rem; }
+.step-no { font-size: .875rem; }
+.mission-links { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0 8px; margin-top: 6px; }
+.mission-links .quiet, .collection .quiet { min-height: 44px; display: inline-flex; align-items: center; padding: 0; }
+.primary, .secondary, .bin, .answer { min-height: 44px; font-size: .9375rem; }
+.world-label { max-width: calc(100% - 44px); }
+.world-label strong { font-size: .9375rem; overflow-wrap: anywhere; }
+.world-hint { top: 77px; font-size: .8125rem; color: var(--ink); }
+.scene-badge { top: auto; bottom: 78px; font-size: .75rem; }
+.companion strong, .companion p { font-size: .875rem; }
+.companion { pointer-events: none; }
+.view-controls { flex-direction: row; }
+.view-controls button { height: 44px; width: 44px; font-size: 1.125rem; }
+.view-controls button:disabled { display: none; }
+.companion { max-width: calc(100% - 190px); }
+.collection { margin: 22px 0; }
+.collection .panel-head p { font-size: .875rem; color: var(--muted); margin: 2px 0 0; }
+.objects { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.object-button { min-height: 66px; }
+.object-button strong { font-size: 1rem; }
+.object-button small { font-size: .8125rem; }
+.object-button.sorted { background: #e5f2e9; border-color: #9cbeaa; }
+footer { align-items: center; font-size: .875rem; }
+footer .techs .quiet { min-height: 44px; }
+.modal { max-height: 88dvh; }
+.modal p, .modal .fact { font-size: 1rem; }
+.modal .note, .modal .info-card p, .field-label, .template { font-size: .875rem !important; }
+.modal .info-card h3 { font-size: 1rem; }
+.close { min-height: 44px; min-width: 44px; flex-shrink: 0; }
+.file-label { position: relative; min-height: 44px; font-size: .875rem; }
+.file-label:focus-within { outline: 3px solid #137367; outline-offset: 3px; }
+.file-label input { display: block; position: absolute; inset: 0; opacity: 0; width: 100%; cursor: pointer; }
+#quizQuestion { font-size: 1.125rem; line-height: 1.5; margin: 8px 0 14px; }
+.answer:disabled { opacity: 1; color: var(--ink); }
+#quizFeedback:focus-visible, #itemFeedback:focus-visible { outline-color: var(--green); }
+.review-questions { padding-inline-start: 1.25rem; }
+.review-questions > li + li { margin-top: 12px; }
+.review-questions .answer-key { margin: 2px 0 0; color: var(--green); }
+.review-questions .review-explanation { margin: 2px 0 0; }
+.review-questions ul { padding-inline-start: 1.2rem; font-size: .875rem; }
+#planResult, #generationNote { overflow-wrap: anywhere; }
+@media (max-width: 1020px) {
+  .objects { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 780px) {
+  .layout { grid-template-columns: 1fr; grid-template-areas: "mission" "world"; gap: 14px; }
+  .intro { flex-wrap: wrap; gap: 12px; padding: 23px 0 18px; }
+  .mission { padding: 17px; }
+  #lessonProgress { margin: 10px 0 12px; }
+  .steps { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 14px; }
+  .step { flex-direction: row; align-items: center; padding: 0; }
+  .step p { margin: 0; }
+  .world { height: clamp(290px, 75vw, 420px); }
+  .companion { max-width: calc(100% - 78px); }
+  .view-controls { flex-direction: column; gap: 2px; }
+  .scene-badge { display: none; }
+  .world-hint { top: 59px; }
+  .collection .panel-head { align-items: flex-start; flex-wrap: wrap; gap: 4px 12px; }
+  footer { align-items: flex-start; }
+}
+@media (max-width: 380px) {
+  .shell { padding: 0 12px; }
+  .object-button { padding: 8px; gap: 5px; }
+  .object-button span:first-child { font-size: 1.25rem; }
+}
+@media print {
+  #certificateModal .field-label, #certificateModal #nameInput { display: none !important; }
+  #certificateModal .certificate { margin: 10mm 5mm; break-inside: avoid; }
+}
+body.reduce-motion * { transition: none !important; }
+</style></head><body>
+<a class="skip-link" href="#mainAction">跳到课堂任务</a>
+<div class="shell">
+  <header>
+    <a class="brand" href="/" aria-label="蓝海课堂首页"><span class="mark" aria-hidden="true">≈</span><span>蓝海课堂<small>GOODACTION LAB</small></span></a>
+    <nav class="nav" aria-label="主导航">
+      <button class="active" id="exploreNav">探索课堂</button>
+      <button id="teacherNav">教学指南</button>
+      <button id="creatorNav">课堂共创</button>
+      <a class="language-switch" href="/en" lang="en" aria-label="Switch to English">EN</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="pageTitle">
+      <div>
+        <h1 id="pageTitle">和小蓝一起，<span>守护海洋。</span></h1>
+        <p class="subtitle">探索 3D 海岛、为海漂分类，再用三道题检验你的发现。</p>
+      </div>
+      <div class="intro-meta"><span>8–12 岁</span><span>约 5 分钟</span></div>
+    </section>
+    <div class="layout">
+      <section class="mission" aria-labelledby="missionTitle">
+        <div class="panel-head">
+          <h2 id="missionTitle">你的守护任务</h2>
+          <span class="tiny" id="progressText" role="status" aria-atomic="true">0 / 3 完成</span>
+        </div>
+        <progress id="lessonProgress" max="3" value="0" aria-labelledby="missionTitle"></progress>
+        <ol class="steps">
+          <li class="step current" id="step0"><span class="step-no" aria-hidden="true">1</span><div><strong>发现海漂</strong><p id="collectProgress">寻找 4 件不属于海洋的物品</p></div></li>
+          <li class="step" id="step1"><span class="step-no" aria-hidden="true">2</span><div><strong>送它们回家</strong><p id="sortProgress">学习分类，让资源再次出发</p></div></li>
+          <li class="step" id="step2"><span class="step-no" aria-hidden="true">3</span><div><strong>成为海洋守护者</strong><p id="quizProgress">回答 3 个问题</p></div></li>
+        </ol>
+        <button class="primary full" id="mainAction">开始守护</button>
+        <div class="mission-links">
+          <a class="quiet" href="#objectsHeading" id="stationLink">浏览全部海漂</a>
+          <button class="quiet" id="resetProgress">重新体验</button>
+        </div>
+      </section>
+      <section class="world" aria-label="可旋转的 3D 海洋课堂">
+        <div id="scene"></div>
+        <div class="world-label"><strong id="sceneTitle">海洋守护行动</strong></div>
+        <div class="scene-badge">可交互 3D 世界</div>
+        <div class="world-hint">拖动旋转 · 点击海漂探索</div>
+        <span class="floating-tag turtle" id="turtleTag" aria-hidden="true">小蓝</span>
+        <span class="floating-tag" id="itemTag" aria-hidden="true">发现海漂</span>
+        <div class="companion"><div class="avatar" aria-hidden="true">🐢</div><div><strong id="companionTitle">你好，我是小蓝。</strong><p id="companionText">海浪带来了一些不属于这里的东西，一起找找吧。</p></div></div>
+        <div class="view-controls" aria-label="视角控制"><button id="zoomIn" aria-label="放大视角">＋</button><button id="zoomOut" aria-label="缩小视角">−</button><button id="resetView" aria-label="重置视角">⟲</button></div>
+      </section>
+    </div>
+    <section class="collection" aria-labelledby="objectsHeading">
+      <div class="panel-head">
+        <div><h2 id="objectsHeading" tabindex="-1">海漂观察站</h2><p>选择一种物品，观察、收集或分类。</p></div>
+        <button class="quiet" id="accessibilityBtn">阅读与动画设置</button>
+      </div>
+      <div class="objects" id="objects"></div>
+    </section>
+  </main>
+  <footer>
+    <span>向善造物 · 蓝海课堂</span>
+    <div class="techs"><button class="quiet" id="aboutNav">作品说明</button><button class="quiet" id="serviceBtn">查看服务与素材状态</button></div>
+  </footer>
+</div>
+<dialog class="modal" id="itemModal" aria-labelledby="itemHeading"><div class="modal-head"><h2 id="itemHeading"></h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body" id="itemBody"></div></dialog>
+<dialog class="modal" id="quizModal" aria-labelledby="quizHeading"><div class="modal-head"><h2 id="quizHeading">海洋知识小挑战</h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body" id="quizBody"></div></dialog>
+<dialog class="modal" id="certificateModal" aria-labelledby="certHeading"><div class="modal-head"><h2 id="certHeading">这是属于你的蓝色回响</h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body"><div class="certificate"><div class="seal">✺</div><div class="eyebrow" style="justify-content:center">OCEAN GUARDIAN</div><h3>海洋守护者证书</h3><p>授予</p><div class="big" id="certName">小小行动家</div><p>已完成海漂探索、垃圾分类与海洋知识挑战。<br>愿每一次靠近海洋，都留下一份温柔。</p><p id="certDate" hidden></p><b style="font-size:12px">向善造物 · 蓝海课堂</b></div><label class="field-label" for="nameInput">证书昵称（仅保存在本机）</label><input id="nameInput" type="text" maxlength="12" placeholder="小小行动家"><div class="actions"><button class="primary" id="printCert">打印 / 保存证书 PDF</button><button class="secondary" id="exportRecord">导出学习记录</button></div></div></dialog>
+<dialog class="modal wide" id="creatorModal" aria-labelledby="creatorHeading"><div class="modal-head"><h2 id="creatorHeading">把一个想法，变成一堂课。</h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body"><p>为教师和公益志愿者设计。从教学目标出发，让内容、场景和互动一起生长。</p><div class="creator-grid"><div><label class="field-label" for="lessonPrompt">你想教什么？</label><textarea id="lessonPrompt" maxlength="1500">为 8–12 岁学生设计一堂海洋环保互动课。包含海龟、海漂收集、垃圾分类和三个小问答，语气温暖，5 分钟内可以体验完。</textarea><div><button class="template" data-prompt="为 8–12 岁学生设计海洋塑料污染公益课，包含海龟、塑料瓶和购物袋，鼓励减少一次性用品。">海洋减塑</button><button class="template" data-prompt="为小学生设计一堂海滩清洁公益课，讲解安全参与海滩清洁的方法，包含三个知识问答。">海滩清洁</button></div><label class="field-label" for="planProvider">课程规划服务</label><select id="planProvider" style="padding:10px;border:1px solid #cfdbcf;border-radius:12px;width:100%;background:white;color:var(--ink)"><option value="astron">Astron 工作流 · Spark-X2.6-4B</option><option value="spark">Spark-X2.6-4B 模型服务</option></select><button class="primary full" id="generatePlan" style="margin-top:14px">生成课程方案</button><p class="note">请勿输入学生姓名、联系方式等个人信息。生成后可先查看全部题目和答案。</p><p id="generationNote" role="status"></p><div id="planResult" class="hidden"></div></div><div><div class="flow-row"><span class="state" id="astronState">检查中</span><strong>01　Astron Agent</strong><small>串联需求解析与课程规划</small></div><div class="flow-row"><span class="state" id="sparkState">检查中</span><strong>02　SparkLLM</strong><small>理解教学需求，输出问答和任务</small></div><div class="flow-row"><span class="state" id="aholoState">检查中</span><strong>03　Aholo Lux3D 素材与接口</strong><small>生成可加载的核心 3D 资产</small></div><div class="status-box"><b>当前课堂素材</b><p id="assetStatus">正在加载已发布的 Aholo Lux3D 海龟素材。</p></div><h3 class="subhead">给小蓝一个新形象</h3><p class="note">可通过 Lux3D 生成海龟，也可导入你已导出的 GLB。新模型会替换场景中的小蓝。</p><button id="generateAsset" class="secondary full" style="width:100%">用 Lux3D 生成海龟</button><label class="file-label">＋ 导入 GLB 模型（最多 25 MB）<input id="assetFile" type="file" accept=".glb,model/gltf-binary"></label><label class="field-label" for="assetSource">导入素材来源说明</label><input id="assetSource" type="text" maxlength="180" placeholder="例如：Aholo Lux3D；任务编号…"><p class="note">仅在本机保存素材与来源记录。导入不等于已验证来源。</p><div class="actions"><button class="quiet" id="restoreLesson" hidden>恢复内置课堂</button><button class="quiet" id="exportPlan">导出当前课程</button><button class="quiet" id="removeAsset">恢复发布版海龟</button></div></div></div></div></dialog>
+<dialog class="modal" id="teacherModal" aria-labelledby="teacherHeading">
+  <div class="modal-head"><h2 id="teacherHeading">教学指南</h2><button class="close" data-close aria-label="关闭">×</button></div>
+  <div class="modal-body">
+    <p>适合 8–12 岁。可让学生独立体验，也可以投屏带全班一起完成。互动约 5 分钟。</p>
+    <div class="info-card"><h3>课前 · 从观察开始</h3><p>请学生说出一种可能被海浪带到岸上的垃圾，并猜猜它是从哪里来的。</p></div>
+    <div class="info-card"><h3>课中 · 说出分类理由</h3><p>选一件海漂，请学生先解释投放理由，再核对结果。用本地分类指引对照课堂示例。</p></div>
+    <div class="info-card"><h3>课后 · 带走一个行动</h3><p>请学生完成一句话：“下次去海边，我会……因为……”</p></div>
+    <p class="note">现实中遇到破损电池或不明废弃物，请让学生告诉成年人并保持距离。</p>
+    <div class="actions"><button class="primary" id="teacherStart">返回课堂</button><button class="secondary" id="teacherCreate">设计自己的课程</button></div>
+  </div>
+</dialog>
+<dialog class="modal" id="aboutModal" aria-labelledby="aboutHeading"><div class="modal-head"><h2 id="aboutHeading">一堂能参与的公益课</h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body"><p>向善造物——基于 Astron 与 SparkLLM 的 3D 公益课堂共创助手。以海洋环保为首个主题，让孩子在观察、选择和行动中学习。</p><div class="info-card"><h3>先观察，再行动</h3><p>在 3D 小岛中发现四件海漂，了解它们对环境的影响，再将它们送到合适的垃圾桶。</p></div><div class="info-card"><h3>一次选择，一点理解</h3><p>三个知识挑战支持重试和解释，不用倒计时，也不会因为答错扣分。</p></div><div class="info-card"><h3>给创作者的共创入口</h3><p>Astron / Spark 负责课程内容，Lux3D 负责 3D 素材。内置课堂与外部服务状态明确展示，连接配置由服务端保管。</p></div><p class="note">本课堂使用教学示例分类，实际投放请遵循所在地规定；不引导儿童接触真实的危险废弃物。学习记录保存在本机，可自行清除。</p><div class="actions"><a class="secondary" href="https://github.com/iflytek/astron-agent" target="_blank" rel="noopener">Astron Agent</a><a class="secondary" href="https://huggingface.co/XHToken/Spark-X2.6-4B" target="_blank" rel="noopener">Spark-X2.6</a><a class="secondary" href="https://lux3d.aholo3d.cn/lux3d/home" target="_blank" rel="noopener">Aholo Lux3D</a></div></div></dialog>
+<dialog class="modal" id="settingsModal" aria-labelledby="settingsHeading"><div class="modal-head"><h2 id="settingsHeading">按你的节奏探索</h2><button class="close" data-close aria-label="关闭">×</button></div><div class="modal-body"><p>全部探索任务也可通过观察站按钮完成，无需拖动 3D 场景。</p><label class="field-label"><input type="checkbox" id="motionToggle"> 减少场景动画</label><label class="field-label"><input type="checkbox" id="contrastToggle"> 增强文字对比</label><p class="note">偏好仅保存在本机。</p></div></dialog><div class="toast hidden" id="toast" role="status" aria-live="polite"></div><script src="/app.js" defer></script></body></html>

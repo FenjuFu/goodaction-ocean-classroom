@@ -1,0 +1,29 @@
+{
+  "variants": [
+    {
+      "file": "assets/aholo-turtle.glb",
+      "bytes": 788948,
+      "triangles": 17020,
+      "sha256": "839b935a8251f05b6dd11b3727abd54155cce370b5489e02ec91b5a12f025a5b"
+    },
+    {
+      "file": "assets/aholo-turtle-light.glb",
+      "bytes": 401972,
+      "triangles": 7160,
+      "sha256": "3e4a8919a8c69fb2e1cc80eecee925c353f4babc95e6480f5dc7a71c63ef6048"
+    }
+  ],
+  "name": "低模海龟",
+  "source": "Aholo Lux3D 图生 3D · 用户导出素材",
+  "verifiedAholo": true,
+  "verification": "已查看 Aholo 完成状态与贴图预览，并与用户上传导出包核对",
+  "receivedAt": "2026-11-06",
+  "originalFile": "低模海龟.glb",
+  "originalBytes": 13175060,
+  "originalTriangles": 283682,
+  "originalSha256": "38666a64479beb46176300860376604909124e7d265db1bfea84079af6077a4f",
+  "pipeline": "glTF Transform simplification; 768px JPEG textures; vertex-color lightweight derivative",
+  "taskId": null,
+  "generatedAt": null,
+  "note": "未取得任务编号或精确生成时间，不作推测。完整原始导出包保留在用户上传文件中。"
+}

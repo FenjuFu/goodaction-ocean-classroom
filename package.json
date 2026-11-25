@@ -1,0 +1,23 @@
+{
+  "name": "goodaction-ocean-classroom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare.mjs && bash scripts/build.sh",
+    "dev": "node scripts/dev.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build:vercel": "node scripts/prepare.mjs"
+  },
+  "dependencies": {
+    "jsonrepair": "3.15.0",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.0.0",
+    "@gltf-transform/functions": "^4.0.0",
+    "esbuild": "0.25.12",
+    "meshoptimizer": "^0.24.0",
+    "sharp": "^0.34.0"
+  }
+}
